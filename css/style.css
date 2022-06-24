@@ -1,9 +1,9 @@
 html {
-  font-size: 16px;
-
   margin-bottom: 500px;
 }
-
+p {
+  font-size: 16px;
+}
 .user-section {
   background-color: rgb(223, 222, 222);
 }
