@@ -1,0 +1,28 @@
+html {
+  font-size: 16px;
+
+  margin-bottom: 500px;
+}
+
+.user-cards__card {
+  text-align: center;
+  color: #999999;
+  border-bottom: 1px solid tomato;
+  border-bottom-color: inherit;
+  padding: 2rem 0;
+}
+
+.user-cards__card__image {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 1px solid rgb(151, 151, 151);
+  padding: 6px;
+  margin-bottom: 1.5rem;
+}
+
+.user-cards__card__title {
+  font-weight: normal;
+  font-size: 1.4rem;
+}
