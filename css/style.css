@@ -4,6 +4,10 @@ html {
   margin-bottom: 500px;
 }
 
+.user-section {
+  background-color: rgb(223, 222, 222);
+}
+
 .user-cards__card {
   text-align: center;
   color: #999999;
@@ -13,6 +17,7 @@ html {
 }
 
 .user-cards__card__image {
+  display: inline-block;
   border-radius: 50%;
   width: 300px;
   height: 300px;
@@ -25,4 +30,25 @@ html {
 .user-cards__card__title {
   font-weight: normal;
   font-size: 1.4rem;
+}
+
+@media screen and (min-width: 650px) {
+  .user-cards__card {
+    text-align: left;
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 1fr 3fr;
+  }
+  .user-cards__card__image {
+    width: 100%;
+    height: initial;
+    aspect-ratio: 1;
+    grid-row: span 2;
+  }
+  .user-cards__card__title {
+    align-self: end;
+  }
+  .user-section {
+    padding: 0 6%;
+  }
 }
