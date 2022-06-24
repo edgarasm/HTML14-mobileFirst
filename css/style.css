@@ -39,6 +39,16 @@ html {
     column-gap: 2rem;
     grid-template-columns: 1fr 3fr;
   }
+  .user-cards__card--rtl {
+    text-align: right;
+    grid-template-columns: 3fr 1fr;
+  }
+  .user-cards__card--rtl .user-cards__card__image {
+    grid-column: 2 / span 1;
+  }
+  .user-cards__card--rtl .user-cards__card__title {
+    grid-row: 1;
+  }
   .user-cards__card__image {
     width: 100%;
     height: initial;
@@ -46,7 +56,7 @@ html {
     grid-row: span 2;
   }
   .user-cards__card__title {
-    align-self: end;
+    align-self: flex-end;
   }
   .user-section {
     padding: 0 6%;
